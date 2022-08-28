@@ -1,0 +1,16 @@
+Difference between single | and double||:
+
+When || is used, it will not execute the next part of the comparison if the
+previous part is true. Since for conditional OR one true is enough to return true.
+
+What do we get in ROI(Return on investment)?
+We get faster execution, so we save time.
+
+Difference between && and & =>
+&& will return false if the first comparison is false.
+So it's not even going to check the second part.
+
+& - > Check both sides anyway.
+
+
+

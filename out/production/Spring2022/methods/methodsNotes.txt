@@ -1,0 +1,147 @@
+Methods:
+What are methods in programming?
+
+Every single programming language has methods. Also, in some languages like Python and JavaScript
+they known as functions.
+
+Methods are coding logic that can solve a problem and return solution.
+Methods are a big part of OOP.
+
+History:
+Before OOP was developed all coding had being done in top to bottom manner. If I had to
+design a program which turns on/off a lamp, every time Program needed to turn on/off
+the lamp they had to repeatedly write the same actions again and again. So there was not a
+single way to reuse the same logic(action) in different scenarios.So it was a problem.
+
+End users didn't see that , however it's extremely difficult to maintain such programs,
+because if there was a step changed for turning the light, developers would have to go to many places inside the
+whole code just to apply the changes. Repetitive code is an extremely bad coding practice.
+
+Methods became a solution for this problem.
+
+so for example:
+
+turnOnTheLight() {
+//whole code
+//whole code
+//whole code
+//whole code
+//whole code...
+}
+now we can just call the method =>
+if(switch.on()){
+turnOnTheLight();
+}=> we don't need to type whole code once again...
+
+Access Modifiers:
+Java offers four choices of access modifier:
+public => The method can be called from any class.
+private =>The method can only be called from within the same class.
+protected =>The method can only be called from classes in the same package or subclasses.
+Default (Package Private) Access => The method can only be called from classes in the same package. This
+one is tricky because there is no keyword for default access. You simply omit the access modifier.
+
+Return data type can be any both primitive or non primitive.
+(int, short, float, char, String). => means method will return the specified data
+
+void => which means method doesn't return any data
+
+METHOD DEFINITION
+REQUIREMENTS
+Modifiers : A method can be public, private,
+protected, default access.
+
+Optional Specifiers:  static, abstract, final,
+synchronized, strictfp.
+
+return type:  might be an actual Java type
+such as String or int. If there is no return
+type, the void keyword is used. In other words -
+if a method has a return type other than void return statement
+return is required for the method
+
+Method Name: camelCase - start with lowerCase
+
+Parameter Lists: Although the parameter
+list is required, it does not have to contain any
+parameters. This means you can just have an
+empty pair of parentheses after the method
+name, such as void nap(){}. If you do have
+multiple parameters, you separate them with
+a comma.
+
+Basically methods represent actions.
+
+Parentheses are required:
+empty parenthesis stands for no parameters
+public void sayHi() {
+
+}
+or they can be populated with parameters. Parameters are variables inside parentheses
+separated by comma(,). We don't initialize the parameters
+
+what are parameters?
+Imagine you have built a car with all parts - engine and everything else in place already,
+but car won't even start unless you put some gas.
+Your parameters is information you need to in your method like a car needs gas to start and move
+
+public int sum (int num1, int num2) {
+ int result = num1 + num2
+ return result;                            => return statement.
+}
+=> if you don't have to numbers, sum method is useless
+
+optional specifiers.
+after access modifier we can put optional specifiers.
+There are two of them:
+1.static
+2.final
+
+ex: public static char getGrade(int exam1, int exam2){
+
+}
+if you make your method static you can call this method inside another static method directly
+just by method name
+
+Method definition rule?
+method is one coding logic that has to solve one problem, basically it's action
+
+Parameters and Arguments
+Information can be passed to methods as parameter. Parameters act as variables inside the method.
+
+Parameters are specified after the method name, inside the parentheses.
+ You can add as many parameters as you want, just separate them with a comma.
+
+ The following example has a method that takes a String called fname as parameter.
+ When the method is called, we pass along a first name, which is used inside the method to print the full name:
+
+ Example
+
+ public class Main {
+   static void myMethod(String fname) {
+     System.out.println(fname + " Refsnes");
+   }
+
+   public static void main(String[] args) {
+     myMethod("Liam");
+     myMethod("Jenny");
+     myMethod("Anja");
+   }
+ }
+ // Liam Refsnes
+ // Jenny Refsnes
+ // Anja Refsnes
+
+ When a parameter is passed to the method, it is called an argument.
+ So, from the example above: fname is a parameter, while Liam, Jenny and Anja are arguments.
+
+ ###Method overloading.
+ Method overloading is when you create same method with same name but different parameters.
+
+ //method overloading allows us to use same method name for multiple methods with different parameter.
+
+ //if the two methods have same names and same params then java will give a compilation error.
+ ex: int sum(int num1, int num2);
+ ex: double sum(double num1, double num2);
+
+ Hardest thing for devs is to come up with names.

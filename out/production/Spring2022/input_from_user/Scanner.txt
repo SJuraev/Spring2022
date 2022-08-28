@@ -1,0 +1,7 @@
+Runtime errors -
+Are errors that are caused by user Input. We find it out only after running the program.
+They cause the program to crash.
+
+Compile time errors ->
+They are errors which don't let the program run. AKA Java syntax and rules issues.
+For example => { :, anything red inside the code
